@@ -1,6 +1,6 @@
-import {NativeComponent} from "../util/NativeComponent.js";
+import {Component} from "../util/Component.js";
 
-export class Input extends NativeComponent {
+export class Input extends Component {
 
     tag = "input";
     hasFocus = false;
@@ -29,8 +29,10 @@ export class Input extends NativeComponent {
         const cursorPosition = this.htmlElement.selectionStart;
         super.build();
         if(hadFocus) {
-            this.htmlElement.focus();
-            this.htmlElement.setSelectionRange(cursorPosition, cursorPosition);
+            setTimeout(() => {
+                this.htmlElement.focus();
+                this.htmlElement.setSelectionRange(cursorPosition, cursorPosition);
+            });
         }
     }
 

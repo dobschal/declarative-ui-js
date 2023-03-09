@@ -1,5 +1,5 @@
-import {NativeComponent} from "../util/NativeComponent.js";
+import {Component} from "../util/Component.js";
 
-export class Root extends NativeComponent {
+export class Root extends Component {
     _htmlElement = document.body;
 }

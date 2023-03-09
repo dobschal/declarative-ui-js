@@ -1,6 +1,6 @@
-import {NativeComponent} from "../util/NativeComponent.js";
+import {Component} from "../util/Component.js";
 
-export class Paragraph extends NativeComponent {
+export class Paragraph extends Component {
     tag = "p";
 
     /**

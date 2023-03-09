@@ -1,6 +1,6 @@
-import {NativeComponent} from "../util/NativeComponent.js";
+import {Component} from "../util/Component.js";
 
-export class Image extends NativeComponent {
+export class Image extends Component {
     tag = "img";
     constructor(imageUrl, config = {}) {
         config.attributes = config.attributes ?? {};
